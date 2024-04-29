@@ -1,8 +1,8 @@
 version: '3'
 services:
   leafy-postgres:
-    build: ./leafy-postgresql
-    image: leafy-postgres:5.0.0-compose
+#    build: ./leafy-postgresql
+    image: jihwanb/leafy-postgres:88032bcbd5a99ed45907bb2a45594de86b8bdd69
     volumes:
       - mydata:/var/lib/postgresql/data
     deploy:
