@@ -13,8 +13,8 @@ services:
     restart: always
 
   leafy-backend:
-    build: ./leafy-backend
-    image: leafy-backend:5.0.0-compose
+#    build: ./leafy-backend
+    image: jihwanb/leafy-backend:ecc780e61a124e3c73efa38d26c41b0185041778
     environment:
       - DB_URL=leafy-postgres
     depends_on:
@@ -27,8 +27,8 @@ services:
     restart: on-failure
       
   leafy-front:
-    build: ./leafy-frontend
-    image: leafy-front:5.0.0-compose
+#    build: ./leafy-frontend
+    image: jihwanb/leafy-frontend:e5083998e1a014381c7ac5111a77a1aec5795fb9
     environment:
       - BACKEND_HOST=leafy-backend
     ports:
