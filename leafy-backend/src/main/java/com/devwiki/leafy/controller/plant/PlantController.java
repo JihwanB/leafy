@@ -77,4 +77,3 @@ public class PlantController {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }
-
